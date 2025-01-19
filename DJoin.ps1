@@ -22,3 +22,4 @@ Add-Computer @addComputerSplat
 
 # Restart the computer to apply changes
 Restart-Computer
+
