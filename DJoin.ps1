@@ -2,7 +2,7 @@
 $newComputerName = Read-Host -Prompt "Enter the new computer name"
 
 # Rename the computer
-Rename-Computer -NewName $newComputerName -Force
+Rename-Computer -NewName SCAS-351-$newComputerName -Force
 
 # Convert the password to a secure string
 $securePassword = ConvertTo-SecureString '*171*&muru343' -AsPlainText -Force
