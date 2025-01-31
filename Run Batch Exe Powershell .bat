@@ -53,6 +53,25 @@ call 3.bat
 cd /d "%~dp0"
 start /wait cmd /c 3.bat
 
+
+-------------------------------------------------
+
+
+
+cd /d "%~dp0"  :: Change to the directory where the batch file is located
+
+if exist "3.bat" (
+    start /wait cmd /c 3.bat  :: Run 3.bat if it exists
+) else (
+    echo 3.bat not found, adding file...  :: Print a message if 3.bat doesn't exist
+    echo REM Creating 3.bat > 3.bat  :: Example of adding content to 3.bat
+    echo echo This is a new 3.bat >> 3.bat  :: Add some content to the new 3.bat
+)
+
+
+
+
+
 -------------------------------------
 
 @echo off
